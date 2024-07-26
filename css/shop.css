@@ -1,0 +1,1367 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+nav ul a {
+  font: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 600 !important;
+  text-decoration: none;
+  margin-left: 2rem !important;
+  opacity: 0.4;
+}
+
+
+@media only screen and (min-width: 350px) and (max-width: 480px) {
+  /* Extra small devices  */
+  nav ul li span {
+    color: white;
+    font-size: 2rem !important;
+    padding-top: 5px;
+  }
+
+  /* section1 */
+  .section1 h1 {
+    font-size: 40px;
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+
+  .section2 .card:not(.card1) {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    width: 18rem;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    z-index: 99 !important;
+  }
+
+  .section2 .card:not(.card1) .card-title,
+  .section2 .card:not(.card1) .card-text {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body {
+    padding-left: 0;
+    padding-bottom: 0;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover .card-text {
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    visibility: hidden;
+    background-color: #dce5e4;
+    position: absolute;
+    z-index: -1 !important;
+    transition: 0.2s linear;
+  }
+
+  .section2 .card:not(.card1):hover .card-body::after {
+    visibility: visible;
+    transform: scaleY(-55);
+  }
+
+  .section2 .card:not(.card1) a span {
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    margin-left: -1.2rem !important;
+    visibility: hidden;
+    transition: 0.2s linear;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    transform: translateY(-25px);
+  }
+
+  .section2 .card:not(.card1):hover a span {
+    transform: translateY(-15px);
+    visibility: visible;
+    z-index: 1 !important;
+  }
+
+  /* footer */
+
+  footer label {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    margin-top: 5rem;
+  }
+
+  .row-reverse {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+
+  footer form input {
+    padding: 12px 10px 12px 10px;
+    border-radius: 10px;
+    outline: none !important;
+    border: 1px solid rgb(206, 212, 218);
+    font-family: sans-serif;
+    font-size: 16px;
+    color: gray;
+  }
+
+  footer button {
+    padding: 12px 30px 12px 30px !important;
+    border-radius: 10px;
+  }
+
+  footer img {
+    top: -16rem !important;
+    width: 20rem;
+  }
+
+  /* footer row 2 */
+  footer .card-title {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    color: rgb(59, 93, 80);
+  }
+
+  footer .card .card-text {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5 !important;
+  }
+
+  footer .icon-frame {
+    background-color: #a1c4b6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .icon-frame:hover {
+    cursor: pointer;
+    background-color: rgb(59, 93, 80);
+  }
+
+  footer .icon-frame:hover i {
+    color: white !important;
+  }
+
+  footer ul li {
+    border: 0 !important;
+  }
+
+  footer ul li a {
+    font-size: 16px !important;
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    transition: 0.3s;
+  }
+
+  footer ul li a:hover {
+    color: rgba(47, 47, 47, 0.5) !important;
+  }
+
+  /* footer copyright */
+
+  footer .copyright {
+    text-align: center;
+    color: gray;
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+  }
+  footer .copyright a {
+    text-decoration: none;
+    color: gray;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 576px) {
+  /* Extra small devices  */
+  nav ul li span {
+    color: white;
+    font-size: 2rem !important;
+    padding-top: 5px;
+    margin-left: 2rem;
+  }
+
+  /* section1 */
+  .section1 h1 {
+    font-size: 40px;
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+
+  /* section2 */
+
+  .section2 .card:not(.card1) {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    width: 18rem;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    z-index: 99 !important;
+  }
+
+  .section2 .card:not(.card1) .card-title,
+  .section2 .card:not(.card1) .card-text {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body {
+    padding-left: 0;
+    padding-bottom: 0;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover .card-text {
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    visibility: hidden;
+    background-color: #dce5e4;
+    position: absolute;
+    z-index: -1 !important;
+    transition: 0.2s linear;
+  }
+
+  .section2 .card:not(.card1):hover .card-body::after {
+    visibility: visible;
+    transform: scaleY(-55);
+  }
+
+  .section2 .card:not(.card1) a span {
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    margin-left: -1.2rem !important;
+    visibility: hidden;
+    transition: 0.2s linear;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    transform: translateY(-25px);
+  }
+
+  .section2 .card:not(.card1):hover a span {
+    transform: translateY(-15px);
+    visibility: visible;
+    z-index: 1 !important;
+  }
+
+  /* footer */
+
+  footer label {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  footer form input {
+    padding: 12px 10px 12px 10px;
+    border-radius: 10px;
+    outline: none !important;
+    border: 1px solid rgb(206, 212, 218);
+    font-family: sans-serif;
+    font-size: 16px;
+    color: gray;
+  }
+
+  footer button {
+    padding: 12px 30px 12px 30px !important;
+    border-radius: 10px;
+  }
+
+  footer img {
+    top: -11rem !important;
+    width: 20rem;
+  }
+
+  /* footer row 2 */
+  footer .card-title {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    color: rgb(59, 93, 80);
+  }
+
+  footer .card .card-text {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5 !important;
+  }
+
+  footer .icon-frame {
+    background-color: #a1c4b6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .icon-frame:hover {
+    cursor: pointer;
+    background-color: rgb(59, 93, 80);
+  }
+
+  footer .icon-frame:hover i {
+    color: white !important;
+  }
+
+  footer ul li {
+    border: 0 !important;
+  }
+
+  footer ul li a {
+    font-size: 16px !important;
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    transition: 0.3s;
+  }
+
+  footer ul li a:hover {
+    color: rgba(47, 47, 47, 0.5);
+  }
+
+  /* footer copyright */
+
+  footer .copyright {
+    text-align: center;
+    color: gray;
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+  }
+  footer .copyright a {
+    text-decoration: none;
+    color: gray;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  /* sm small devices */
+  nav ul li span {
+    color: white;
+    font-size: 2rem !important;
+    padding-top: 5px;
+    margin-left: 2rem;
+  }
+
+  /* section1 */
+  .section1 h1 {
+    font-size: 40px;
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+
+  /* section2 */
+  .section2 {
+    height: 105rem;
+  }
+
+  .section2 .card:not(.card1) {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    width: 12rem;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    z-index: 99 !important;
+  }
+
+  .section2 .card:not(.card1) .card-title,
+  .section2 .card:not(.card1) .card-text {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body {
+    padding-left: 0;
+    padding-bottom: 0;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover .card-text {
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    visibility: hidden;
+    background-color: #dce5e4;
+    position: absolute;
+    z-index: -1 !important;
+    transition: 0.2s linear;
+  }
+
+  .section2 .card:not(.card1):hover .card-body::after {
+    visibility: visible;
+    transform: scaleY(-40);
+  }
+
+  .section2 .card:not(.card1) a span {
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    margin-left: -1.2rem !important;
+    visibility: hidden;
+    transition: 0.2s linear;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    transform: translateY(-25px);
+  }
+
+  .section2 .card:not(.card1):hover a span {
+    transform: translateY(-15px);
+    visibility: visible;
+    z-index: 1 !important;
+  }
+
+  /* footer */
+
+  footer label {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  footer form input {
+    padding: 12px 10px 12px 10px;
+    border-radius: 10px;
+    outline: none !important;
+    border: 1px solid rgb(206, 212, 218);
+    font-family: sans-serif;
+    font-size: 16px;
+    color: gray;
+  }
+
+  footer button {
+    padding: 12px 30px 12px 30px !important;
+    border-radius: 10px;
+  }
+
+  footer img {
+    top: -11rem !important;
+    width: 18rem;
+  }
+
+  /* footer row 2 */
+  footer .card-title {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    color: rgb(59, 93, 80);
+  }
+
+  footer .card .card-text {
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  footer .icon-frame {
+    background-color: #a1c4b6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .icon-frame:hover {
+    cursor: pointer;
+    background-color: rgb(59, 93, 80);
+  }
+
+  footer .icon-frame:hover i {
+    color: white !important;
+  }
+
+  footer ul li {
+    border: 0 !important;
+  }
+
+  footer ul li a {
+    font-size: 16px !important;
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+
+  footer ul li a:hover {
+    color: rgba(47, 47, 47, 0.5);
+  }
+
+  /* footer copyright */
+
+  footer .copyright {
+    color: gray;
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+  }
+  footer .copyright a {
+    text-decoration: none;
+    color: gray;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* md Medium devices */
+  nav ul li span {
+    color: white;
+    font-size: 2rem !important;
+    padding-top: 5px;
+    margin-left: 2rem;
+  }
+
+  /* section1 */
+  .section1 h1 {
+    font-size: 40px;
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+
+  /* section2 */
+
+  .section2 .card:not(.card1) {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    width: 12rem;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    z-index: 99 !important;
+  }
+
+  .section2 .card:not(.card1) .card-title,
+  .section2 .card:not(.card1) .card-text {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body {
+    padding-left: 0;
+    padding-bottom: 0;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover .card-text {
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    visibility: hidden;
+    background-color: #dce5e4;
+    position: absolute;
+    z-index: -1 !important;
+    transition: 0.2s linear;
+  }
+
+  .section2 .card:not(.card1):hover .card-body::after {
+    visibility: visible;
+    transform: scaleY(-40);
+  }
+
+  .section2 .card:not(.card1) a span {
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    margin-left: -1.2rem !important;
+    visibility: hidden;
+    transition: 0.2s linear;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    transform: translateY(-25px);
+  }
+
+  .section2 .card:not(.card1):hover a span {
+    transform: translateY(-15px);
+    visibility: visible;
+    z-index: 1 !important;
+  }
+
+  /* footer */
+
+  footer label {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  footer form input {
+    padding: 12px 10px 12px 10px;
+    border-radius: 10px;
+    outline: none !important;
+    border: 1px solid rgb(206, 212, 218);
+    font-family: sans-serif;
+    font-size: 16px;
+    color: gray;
+  }
+
+  footer button {
+    padding: 12px 30px 12px 30px !important;
+    border-radius: 10px;
+  }
+
+  footer img {
+    top: -12rem !important;
+    width: 23rem;
+  }
+  /* footer row 2 */
+  footer .card-title {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    color: rgb(59, 93, 80);
+  }
+
+  footer .card .card-text {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  footer .icon-frame {
+    background-color: #a1c4b6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .icon-frame:hover {
+    cursor: pointer;
+    background-color: rgb(59, 93, 80);
+  }
+
+  footer .icon-frame:hover i {
+    color: white !important;
+  }
+
+  footer ul li {
+    border: 0 !important;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    font-family: Poppins, sans-serif;
+    font-size: 16px !important;
+    transition: 0.3s;
+  }
+
+  footer ul li a:hover {
+    color: rgba(47, 47, 47, 0.5);
+  }
+
+  /* footer copyright */
+
+  footer .copyright {
+    color: gray;
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+  }
+  footer .copyright a {
+    text-decoration: none;
+    color: gray;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* lg Large devices */
+  nav ul li span {
+    color: white;
+    font-size: 2rem !important;
+    padding-top: 5px;
+    margin-left: 2rem;
+  }
+
+  nav ul li {
+    overflow: hidden !important;
+  }
+
+  nav ul li a {
+    position: relative;
+  }
+
+  nav ul a::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px !important;
+    right: 0px;
+    background: rgb(249, 191, 41);
+    height: 4px;
+    opacity: 1;
+    visibility: visible;
+    width: 0;
+    transition: 0.3s;
+  }
+
+  nav ul a:hover::before {
+    width: 100% !important;
+  }
+
+  nav ul a:hover {
+    opacity: 1;
+  }
+
+  /* section1 */
+  .section1 h1 {
+    font-size: 55px;
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+
+  /* section2 */
+
+  .section2 .card:not(.card1) {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    width: 18rem;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    z-index: 99 !important;
+  }
+
+  .section2 .card:not(.card1) .card-title,
+  .section2 .card:not(.card1) .card-text {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body {
+    padding-left: 0;
+    padding-bottom: 0;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover .card-text {
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    visibility: hidden;
+    background-color: #dce5e4;
+    position: absolute;
+    z-index: -1 !important;
+    transition: 0.2s linear;
+  }
+
+  .section2 .card:not(.card1):hover .card-body::after {
+    visibility: visible;
+    transform: scaleY(-50);
+  }
+
+  .section2 .card:not(.card1) a span {
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    margin-left: -1.2rem !important;
+    visibility: hidden;
+    transition: 0.2s linear;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    transform: translateY(-25px);
+  }
+
+  .section2 .card:not(.card1):hover a span {
+    transform: translateY(-15px);
+    visibility: visible;
+    z-index: 99 !important;
+  }
+
+  /* footer */
+
+  footer label {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  footer form input {
+    padding: 12px 10px 12px 10px;
+    border-radius: 10px;
+    outline: none !important;
+    border: 1px solid rgb(206, 212, 218);
+    font-family: sans-serif;
+    font-size: 16px;
+    color: gray;
+  }
+
+  footer button {
+    padding: 12px 30px 12px 30px !important;
+    border-radius: 10px;
+  }
+
+  footer img {
+    top: -12rem !important;
+    width: 26rem;
+  }
+
+  /* footer row 2 */
+  footer .card-title {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    color: rgb(59, 93, 80);
+  }
+
+  footer .card .card-text {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  footer .icon-frame {
+    background-color: #a1c4b6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .icon-frame:hover {
+    cursor: pointer;
+    background-color: rgb(59, 93, 80);
+  }
+
+  footer .icon-frame:hover i {
+    color: white !important;
+  }
+
+  footer ul li {
+    border: 0 !important;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    transition: 0.3s;
+  }
+
+  footer ul li a:hover {
+    color: rgba(47, 47, 47, 0.5);
+  }
+
+  /* footer copyright */
+
+  footer .copyright {
+    color: gray;
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+  }
+  footer .copyright a {
+    text-decoration: none;
+    color: gray;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  /* xl Extra large devices */
+  nav ul li span {
+    color: white;
+    font-size: 2rem !important;
+    padding-top: 5px;
+    margin-left: 2rem;
+  }
+
+  nav ul li {
+    overflow: hidden !important;
+  }
+
+  nav ul li a {
+    position: relative;
+  }
+
+  nav ul a::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px !important;
+    right: 0px;
+    background: rgb(249, 191, 41);
+    height: 4px;
+    opacity: 1;
+    visibility: visible;
+    width: 0;
+    transition: 0.3s;
+  }
+
+  nav ul a:hover::before {
+    width: 100% !important;
+  }
+
+  nav ul a:hover {
+    opacity: 1;
+  }
+
+  /* section1 */
+  .section1 h1 {
+    font-size: 55px;
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+
+  /* section2 */
+
+  .section2 {
+    height: 80rem;
+  }
+
+  .section2 .card {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    width: 16rem;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    z-index: 99 !important;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    z-index: 99 !important;
+  }
+
+  .section2 .card:not(.card1) .card-title,
+  .section2 .card:not(.card1) .card-text {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body {
+    padding-left: 0;
+    padding-bottom: 0;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover .card-text {
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    visibility: hidden;
+    background-color: #dce5e4;
+    position: absolute;
+    z-index: -1 !important;
+    transition: 0.2s linear;
+  }
+
+  .section2 .card:not(.card1):hover .card-body::after {
+    visibility: visible;
+    transform: scaleY(-50);
+  }
+
+  .section2 .card:not(.card1) a span {
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    margin-left: -1.2rem !important;
+    visibility: hidden;
+    transition: 0.2s linear;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    transform: translateY(-25px);
+  }
+
+  .section2 .card:not(.card1):hover a span {
+    transform: translateY(-15px);
+    visibility: visible;
+    z-index: 1 !important;
+  }
+
+  /* footer */
+
+  footer label {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  footer form input {
+    padding: 12px 10px 12px 10px;
+    border-radius: 10px;
+    outline: none !important;
+    border: 1px solid rgb(206, 212, 218);
+    font-family: sans-serif;
+    font-size: 16px;
+    color: gray;
+  }
+
+  footer button {
+    padding: 12px 30px 12px 30px !important;
+    border-radius: 10px;
+  }
+
+  footer img {
+    top: -15rem !important;
+    width: 28rem;
+  }
+
+  /* footer row 2 */
+  footer .card-title {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    color: rgb(59, 93, 80);
+  }
+
+  footer .card .card-text {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  footer .icon-frame {
+    background-color: #a1c4b6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .icon-frame:hover {
+    cursor: pointer;
+    background-color: rgb(59, 93, 80);
+  }
+
+  footer .icon-frame:hover i {
+    color: white !important;
+  }
+
+  footer ul li {
+    border: 0 !important;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    font-family: Poppins, sans-serif;
+    font-size: 16px !important;
+    transition: 0.3s;
+  }
+
+  footer ul li a:hover {
+    color: rgba(47, 47, 47, 0.5);
+  }
+
+  /* footer copyright */
+
+  footer .copyright {
+    color: gray;
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+  }
+  footer .copyright a {
+    text-decoration: none;
+    color: gray;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* xxl Extra extra large devices */
+  nav ul li span {
+    color: white;
+    font-size: 2rem !important;
+    padding-top: 5px;
+    margin-left: 2rem;
+  }
+
+  nav ul li {
+    overflow: hidden !important;
+  }
+
+  nav ul li a {
+    position: relative;
+  }
+
+  nav ul a::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px !important;
+    right: 0px;
+    background: rgb(249, 191, 41);
+    height: 4px;
+    opacity: 1;
+    visibility: visible;
+    width: 0;
+    transition: 0.3s;
+  }
+
+  nav ul .current-page::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px !important;
+    right: 0px;
+    background: rgb(249, 191, 41);
+    height: 4px;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  nav ul a:hover::before {
+    width: 100% !important;
+  }
+
+  nav ul a:hover {
+    opacity: 1;
+  }
+
+  /* section1 */
+  .section1 h1 {
+    font-size: 55px;
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+
+  /* section2 */
+  .section2 {
+    height: 80rem;
+    overflow: hidden;
+  }
+
+  .section2 .card {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    width: 18rem;
+  }
+
+  .section2 .card img {
+    transition: 0.3s linear;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    z-index: 99 !important;
+  }
+
+  .section2 .card:not(.card1) .card-title,
+  .section2 .card:not(.card1) .card-text {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body {
+    padding-left: 0;
+    padding-bottom: 0;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover .card-text {
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1) .card-body::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    visibility: hidden;
+    background-color: #dce5e4;
+    position: absolute;
+    z-index: -1 !important;
+    transition: 0.3s linear;
+  }
+
+  .section2 .card:not(.card1):hover .card-body::after {
+    visibility: visible;
+    transform: scaleY(-50);
+  }
+
+  .section2 .card:not(.card1) a span {
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    margin-left: -1.2rem !important;
+    visibility: hidden;
+    transition: 0.2s linear;
+    z-index: 1 !important;
+  }
+
+  .section2 .card:not(.card1):hover img {
+    transform: translateY(-25px);
+  }
+
+  .section2 .card:not(.card1):hover a span {
+    transform: translateY(-15px);
+    visibility: visible;
+    z-index: 1 !important;
+  }
+
+  /* footer */
+
+  footer label {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  footer form input {
+    padding: 12px 10px 12px 10px;
+    border-radius: 10px;
+    outline: none !important;
+    border: 1px solid rgb(206, 212, 218);
+    font-family: sans-serif;
+    font-size: 16px;
+    color: gray;
+  }
+
+  footer .form-col {
+    margin-right: 1rem !important;
+  }
+
+  footer button {
+    padding: 12px 30px 12px 30px !important;
+    border-radius: 10px;
+  }
+
+  footer img {
+    top: -15rem !important;
+    width: 28rem;
+  }
+  /* footer row 2 */
+  footer .card-title {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    color: rgb(59, 93, 80);
+  }
+
+  footer .card .card-text {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  footer .icon-frame {
+    background-color: #a1c4b6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .icon-frame:hover {
+    cursor: pointer;
+    background-color: rgb(59, 93, 80);
+  }
+
+  footer .icon-frame:hover i {
+    color: white !important;
+  }
+
+  footer ul li {
+    border: 0 !important;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+
+  footer ul li a:hover {
+    color: rgba(47, 47, 47, 0.5);
+  }
+
+  /* footer copyright */
+
+  footer .copyright {
+    color: gray;
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+  }
+  footer .copyright a {
+    text-align: end;
+    text-decoration: none;
+    color: gray;
+  }
+}
