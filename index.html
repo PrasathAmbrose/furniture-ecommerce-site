@@ -60,7 +60,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul
-            class="navbar-nav ms-0 ms-sm-0 ms-md-0 ms-lg-auto ms-xl-auto ms-xxl-auto"
+            class="navbar-nav ms-0 ms-sm-0 ms-md-0 ms-lg-auto ms-xl-auto ms-xxl-auto ps-"
           >
             <li class="nav-item">
               <a
@@ -1112,13 +1112,26 @@
             ><br />
             <form
               class="row gap-2 gap-sm-2 gap-md-2 gap-lg-4 gap-xl-5 gap-xxl-5"
-              action="#"
+              action="https://script.google.com/macros/s/AKfycbwuEsoHi0OxFSl5t4IcoAzWTm0y8em0HFq3O0aLK5DSC4axvOHtbpM5475bRjdAFps/exec"
+              name="contact-form"
             >
               <div class="col form-col col-md-6 col-lg-5 col-xl-4 col-xxl-3">
-                <input class="" type="text" placeholder="Enter your name" />
+                <input
+                  class=""
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Enter your name"
+                />
               </div>
               <div class="col form-col col-md-6 col-lg-5 col-xl-4 col-xxl-3">
-                <input class="" type="text" placeholder="Enter your email" />
+                <input
+                  class=""
+                  type="text"
+                  id="mailid"
+                  name="mail_id"
+                  placeholder="Enter your email"
+                />
               </div>
               <div class="col form-col col-md-2 col-lg-4 col-xl-4 col-xxl-3">
                 <button
@@ -1242,6 +1255,7 @@
         </div>
       </div>
     </footer>
+    <script src="./JavaScript/Google Sheet.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
   </body>
