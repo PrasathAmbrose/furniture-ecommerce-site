@@ -1,7 +1,7 @@
 # furniture-ecommerce-site
 Welcome to the **Furniture E-Commerce Site** repository! This project is designed to offer a complete online shopping experience for furniture, making it easy for users to browse, select, and purchase various furniture items.
 
-[Live Demo](https://prasathambrose.github.io/furniture-ecommerce-site/)
+[Live preview](https://prasathambrose.github.io/furniture-ecommerce-site/)
 
 ## Features
 
